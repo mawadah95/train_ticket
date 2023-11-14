@@ -1,0 +1,118 @@
+/* *{
+    margin:0;
+    padding:0;
+    font-family:verdana;
+  } */
+  #abc{
+    width:100%;
+    height:113vh;
+ background-image: url('/assets/t.jpg'); 
+    background-size: cover;
+  }
+  nav{
+    width: 100%;
+    height: 50px;
+    background-color: #0005;
+    line-height: 50px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 30px;
+  }
+  nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.7s all;
+  }
+  nav ul li:hover{
+    background-color:#088;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+  }
+
+
+  
+
+.home-text-center 
+{
+    margin-top: 35%;
+    position: relative;
+    left: 0;
+    transform: translateY(-50%);
+}
+.home-banner h5 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: normal;
+}
+.home-text-center h1 {
+    font-size: 56px;
+    color:rgb(47, 107, 74);
+    font-weight: 700;
+    padding-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: normal;
+    text-shadow: 
+    0 0 3px #faebdc, 
+    0 0 5px #faebdc; 
+}
+.home-banner p {
+    width: 560px;
+    max-width: 100%;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 14px;
+    padding: 0 0 35px;
+    color: #ffffff;
+    margin: 0;
+}
+
+
+.icons-menu i {
+  font-size: 24px; /* Set the font size for the icons */
+  color: white; /* Set the text color for the icons */
+}
+
+
+
+/* footer */
+
+.footer {
+  margin-top: 179px;
+  font-weight: bold;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.637);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-content h3 {
+  font-size: 23px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 2rem;
+  text-align: center;
+  color: #faebdc;
+  font-family: "Brush Script MT", cursive;
+}
+
+.footer-content small {
+  color: #faebdc;
+  font-size: 14px;
+  margin-top: 5px; 
+}

@@ -1,0 +1,67 @@
+<div id="abc">
+    <nav>
+        <ul>
+            
+            
+            <li><a href="">Home</a></li>
+            <li><a href="/admin/adminpage">Admin</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+    </nav>
+  
+  
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- <div class="container mt-5">
+    <div class="row justify-content-center align-items-center"> -->
+        <div class="card" style="max-width: 400px; margin: auto;">
+            <div class="card-header bg-secondary text-white">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+              <h4 class="card-title">Add Train</h4>
+            </div>
+            </div>
+            </div>
+            <div class="card-body">
+              <form [formGroup]="trainForm" (ngSubmit)="onSubmit()">
+                <div class="form-group mt-3">
+                  <label for="name">Train Name:</label>
+                  <input type="text" formControlName="name" class="form-control" />
+                </div>
+                <div class="form-group mt-3">
+                  <label for="destination">Destination From / To:</label>
+                  <input type="text" formControlName="destination" class="form-control" />
+                </div>
+                <div class="form-group mt-3">
+                  <label for="departureTime">Departure Time:</label>
+                  <input type="text" formControlName="departureTime" class="form-control" />
+                </div>
+                <div class="form-group mt-3">
+                  <label for="price">Price:</label>
+                  <input type="text" formControlName="price" class="form-control" />
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                      <button type="submit" class="btn btn-secondary btn-block">Add Train</button>
+                    </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+ 
+          
+<div class="footer">
+  <div class="footer-content">
+    <h3>Trains Booking</h3>
+    <small>
+      Copyright © 2023 ITEC. All Rights Reserved.
+    </small>
+  </div>
+</div>
+
+</div>

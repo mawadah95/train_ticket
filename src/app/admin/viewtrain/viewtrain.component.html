@@ -1,0 +1,57 @@
+<div id="abc">
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="/admin/adminpage">Admin</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+    </nav>
+  
+  
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<div class="card" style="max-width: 800px; margin: auto;">
+    <div class="card-header bg-secondary text-white">
+      <h4 class="card-title">Train List</h4>
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Departure Time</th>
+                <th>Price</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let train of trains">
+                <td>{{ train.name }}</td>
+                <td>{{ train.destination }}</td>
+                <td>{{ train.departureTime }}</td>
+                <td>{{ train.price | currency: 'USD' }}</td>
+                <td>
+                    <button class="btn btn-danger" (click)="deleteTrain(train)">Delete</button>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-content">
+      <h3>Trains Booking</h3>
+      <small>
+        Copyright © 2023 ITEC. All Rights Reserved.
+      </small>
+    </div>
+  </div>
+  
+</div>
+  

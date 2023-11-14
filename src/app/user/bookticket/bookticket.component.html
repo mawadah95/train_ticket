@@ -1,0 +1,65 @@
+<!-- book-ticket.component.html -->
+
+<div id="abc">
+    <nav>
+      <ul>
+         <li><a href="">Home</a></li>
+        <li><a href="/admin/adminlogin">Admin Login</a></li>
+            <li><a href="/user/bookticket">Book Tickets</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="card" style="max-width: 800px; margin: auto;">
+      <div class="card-header bg-secondary text-white">
+        <h4 class="card-title">Book Ticket</h4>
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Train Name</th>
+              <th>Destination</th>
+              <th>Departure Time</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let train of trains" [class.active]="selectedTrain === train">
+              <td>{{ train.name }}</td>
+              <td>{{ train.destination }}</td>
+              <td>{{ train.departureTime }}</td>
+              <td>{{ train.price | currency: 'USD' }}</td>
+              <td>
+                <button class="btn btn-secondary" (click)="selectTrain(train)">Select</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div *ngIf="selectedTrain">
+          <p>
+            Selected Train: {{ selectedTrain.name }}
+            <br>
+            <a routerLink="/payment/bill/:trainName">Proceed to Payment</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+<div class="footer">
+  <div class="footer-content">
+    <h3>Trains Booking</h3>
+    <small>
+      Copyright © 2023 ITEC. All Rights Reserved.
+    </small>
+  </div>
+</div>
+
+  </div>
+  

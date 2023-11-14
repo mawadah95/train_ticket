@@ -1,0 +1,50 @@
+
+
+<div id="abc">
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="/admin/adminlogin">Admin Login</a></li>
+            <li><a href="/user/bookticket">Book Tickets</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="card" style="max-width: 800px; margin: auto;">
+      <div class="card-header bg-secondary text-white">
+        <h4 class="card-title">Payment</h4>
+      </div>
+      <div class="card-body">
+        <p>
+          Thank you for choosing the following train:
+          <strong>{{ selectedTrainName }}</strong>
+        </p>
+        <h5>Bill Details:</h5>
+        <p>Train Fare: $50.00</p>
+        <p>Taxes: $5.00</p>
+        <p>Total Amount: $55.00</p>
+        <button class="btn btn-secondary" routerLink="/payment/pay/:trainName">Pay Now</button>
+      </div>
+    </div>
+
+    
+<div class="footer">
+  <div class="footer-content">
+    <h3>Trains Booking</h3>
+    <small>
+      Copyright © 2023 ITEC. All Rights Reserved.
+    </small>
+  </div>
+</div>
+
+  </div>
+
+
+
+  
